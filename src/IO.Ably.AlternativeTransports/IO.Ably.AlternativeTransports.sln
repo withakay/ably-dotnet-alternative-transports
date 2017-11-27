@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Ably.AlternativeTransports.WebSockets4Net", "IO.Ably.AlternativeTransports.WebSockets4Net\IO.Ably.AlternativeTransports.WebSockets4Net.csproj", "{9FD96D61-48F9-4C3A-8027-40C411521BB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Ably.AlternativeTransports.WebSocket4Net", "IO.Ably.AlternativeTransports.WebSockets4Net\IO.Ably.AlternativeTransports.WebSocket4Net.csproj", "{9FD96D61-48F9-4C3A-8027-40C411521BB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
