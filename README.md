@@ -1,6 +1,6 @@
 # Alternative Transports for ably-dotnet
 
-It is possible to create alternate websockets transports for use with ably-dotnet. 
+It is possible to create alternate websockets transports for use with [ably-dotnet](https://github.com/ably/ably-dotnet). 
 This can be required to allow ably-dotnet to work on older platforms, such as windows 7.
 
 ## Websocket4net
