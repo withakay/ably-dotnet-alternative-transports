@@ -5,5 +5,8 @@
 Pass an instance of ITransportFactory into your ClientOptions 
 
 ```csharp
-var realtime = new AblyRealtime(new ClientOptions { TransportFactory = new  IO.Ably.AlternativeTransports.WebSocket4NetTransport.WebSocketTransportFactory() });
+var realtime = 
+  new AblyRealtime(new ClientOptions { 
+    TransportFactory = new IO.Ably.AlternativeTransports.WebSocket4NetTransport.WebSocketTransportFactory() 
+  });
 ```
