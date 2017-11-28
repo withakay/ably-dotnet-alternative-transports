@@ -2,6 +2,8 @@
 
 ## Websocket4net
 
-Pass an instance of ITransport factory into the ClientOptions 
+Pass an instance of ITransportFactory into your ClientOptions 
 
-`var realtime = new AblyRealtime(new ClientOptions { TransportFactory = new  IO.Ably.AlternativeTransports.WebSocket4NetTransport.WebSocketTransportFactory() });`
+```csharp
+var realtime = new AblyRealtime(new ClientOptions { TransportFactory = new  IO.Ably.AlternativeTransports.WebSocket4NetTransport.WebSocketTransportFactory() });
+```
