@@ -30,7 +30,7 @@ namespace IO.Ably.AlternativeTransports.WebSockets4Net
                     {WebSocketState.Closing, TransportState.Closing},
                     {WebSocketState.Closed, TransportState.Closed}
                 };
-        
+
         private WebSocket _socket;
 
         protected WebSocket4NetTransport(TransportParams parameters)
@@ -66,7 +66,7 @@ namespace IO.Ably.AlternativeTransports.WebSockets4Net
                 _socket = CreateSocket(WebSocketUri);
                 AttachEvents();
             }
-            
+
             _socket.Open();
         }
 
@@ -105,10 +105,10 @@ namespace IO.Ably.AlternativeTransports.WebSockets4Net
                 _socket.Closed += socket_Closed;
                 _socket.Error += socket_Error;
                 _socket.MessageReceived += socket_MessageReceived; //For text messages
-                _socket.DataReceived += socket_DataReceived; //For binary messages    
+                _socket.DataReceived += socket_DataReceived; //For binary messages
             }
         }
-        
+
         private void DetachEvents()
         {
             if (_socket != null)
@@ -119,7 +119,7 @@ namespace IO.Ably.AlternativeTransports.WebSockets4Net
                     _socket.Closed -= socket_Closed;
                     _socket.Error -= socket_Error;
                     _socket.MessageReceived -= socket_MessageReceived; //For text messages
-                    _socket.DataReceived -= socket_DataReceived; //For binary messages    
+                    _socket.DataReceived -= socket_DataReceived; //For binary messages
                 }
                 catch (Exception ex)
                 {
@@ -156,7 +156,7 @@ namespace IO.Ably.AlternativeTransports.WebSockets4Net
         private void socket_DataReceived(object sender, DataReceivedEventArgs e)
         {
             Listener?.OnTransportDataReceived(new RealtimeTransportData(e.Data));
-        }        
+        }
 
         public void Dispose()
         {
